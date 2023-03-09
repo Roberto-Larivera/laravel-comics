@@ -14,11 +14,11 @@
 
     @yield('body_css')
 
-    @include("partials.header")
+    @include('partials.header')
 
     @yield('body_main')
 
-    @include("partials.footer")
+    @include('partials.footer')
 
     @yield('body_js')
 

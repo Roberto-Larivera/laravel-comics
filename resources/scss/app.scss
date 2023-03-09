@@ -1,1 +1,19 @@
-@import "~bootstrap/scss/bootstrap";
+@import "~bootstrap/scss/bootstrap"; //importazione bootstrap
+
+// importazioni file scss
+@import "partials/mixins";
+@import "partials/reset";
+@import "partials/variables";
+@import "partials/header";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+}

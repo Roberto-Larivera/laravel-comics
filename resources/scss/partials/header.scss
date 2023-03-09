@@ -1,0 +1,56 @@
+header {
+    height: $height_header;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 10;
+
+    .header_container {
+        height: 100%;
+        width: 100%;
+        @include displayFlex ();
+
+        .header_logo {
+            height: 100%;
+            padding: 20px;
+
+            img {
+                height: 100%
+            }
+
+        }
+
+        .header_links {
+            height: 100%;
+
+            ul {
+                @include displayFlex ();
+                height: 100%;
+
+                li {
+                    list-style-type: none;
+                    padding: 10px;
+                    height: 100%;
+                    @include displayFlex (flex-start);
+
+                    &.active,
+                    &:hover {
+                        box-shadow: inset 0px -6px 0px 0px $color_primary;
+                    }
+
+                    &.active a,
+                    &:hover a {
+                        color: $color_primary;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        color: $txt_link;
+                    }
+                }
+            }
+        }
+    }
+}
