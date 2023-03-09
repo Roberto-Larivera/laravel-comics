@@ -15,10 +15,10 @@ main {
         background-color: $bg_main-current--series;
         padding: 50px 0 50px 0;
         text-align: center;
-    
+
         .container {
             position: relative;
-    
+
             .title-section {
                 display: inline-block;
                 background-color: $color_primary;
@@ -26,7 +26,7 @@ main {
                 position: absolute;
                 top: -80px;
                 left: 0;
-    
+
                 h2 {
                     text-transform: uppercase;
                     color: $txt_light-primary;
@@ -34,17 +34,42 @@ main {
                 }
             }
         }
-    
+
         .series_cards {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-evenly;
             width: 100%;
             margin-bottom: 20px;
-    
-    
+
+
+            .card {
+                width: calc((100% / 6));
+                padding: 5px;
+                margin-bottom: 20px;
+                cursor: pointer;
+
+                .card_image {
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                        aspect-ratio: 1;
+
+                    }
+                }
+
+                h3 {
+                    color: $txt_light-primary;
+                    font-weight: 700;
+                    margin-top: 15px;
+                    text-transform: capitalize;
+                }
+            }
         }
-    
+
         button {
             @include button ($color_primary, $bttn_light-primary, $bg_main-current--series, $color_primary, 10px 50px 10px 50px, uppercase, 700, $color_primary)
         }

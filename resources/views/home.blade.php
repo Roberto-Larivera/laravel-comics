@@ -14,7 +14,12 @@
                         <h2>current series</h2>
                     </div>
                     <div class="series_cards">
-                        {{-- <AppMainCurrentCard :src="element.thumb" :title="element.series" v-for="(element, index) in seriesData" @click="openInfo(index)" /> --}}
+                        <div class="card">
+                            <div class="card_image">
+                                {{-- <img :src="src" :alt="title"> --}}
+                            </div>
+                            <h3>hello</h3>
+                        </div>
                     </div>
                     <button>load more</button>
                 </div>
