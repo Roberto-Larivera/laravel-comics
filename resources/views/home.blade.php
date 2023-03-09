@@ -24,13 +24,6 @@
                     <button>load more</button>
                 </div>
             </div>
-            {{-- <div>
-                <div class="container">
-                    <AppMainCardInfo :src="seriesData[currentBook].thumb" :title="seriesData[currentBook].series"
-                        :price="seriesData[currentBook].price" :type="seriesData[currentBook].type" />
-                </div>
-    
-            </div> --}}
         </div>
     </main>
 @endsection

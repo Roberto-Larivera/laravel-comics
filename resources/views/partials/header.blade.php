@@ -2,7 +2,7 @@
     <div class="container">
         <div class="header_container">
             <div class="header_logo">
-                {{-- <img src="../assets/img/dc-logo.png"> --}}
+                <img src="{{ Vite::asset('resources/img/dc-logo.png') }}">
             </div>
             <div class="header_links">
                     
