@@ -9,36 +9,37 @@
                         <ul>
                             {{-- qui i link  --}}
                             <li>
-                                characters
+                                <a href="#nogo">characters</a>
                             </li>
                             <li>
-                                comics
+                                <a href="#nogo">comics</a>
                             </li>
                             <li>
-                                movies
+                                <a href="#nogo">movies</a>
                             </li>
                             <li>
-                                tv
+                                <a href="#nogo">tv</a>
                             </li>
                             <li>
-                                games
+                                <a href="#nogo">games</a>
                             </li>
                             <li>
-                                collectibles
-                            </li>
+                                <a href="#nogo">collectibles</a>
+                                </li>
                             <li>
-                                videos
-                            </li>
+                                <a href="#nogo">videos</a>
+                                </li>
                             <li>
-                                fans
-                            </li>
+                                <a href="#nogo">fans</a>
+                                </li>
                             <li>
-                                news
-                            </li>
+                                <a href="#nogo">news</a>
+                                </li>
                             <li>
-                                shop
-                            </li>
+                                <a href="#nogo">shop</a>
+                                </li>
                         </ul>
+                        
                     
             </div>
         </div>

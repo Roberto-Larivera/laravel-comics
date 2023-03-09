@@ -29,22 +29,22 @@
                         </li>
                         <li>
                             <a href="#nogo">
-                                <img src="../assets/img/footer-twitter.png" alt="icon-twitter">
+                                <img src="{{ Vite::asset('resources/img/footer-twitter.png') }}" alt="icon-facebook">
                             </a>
                         </li>
                         <li>
                             <a href="#nogo">
-                                <img src="../assets/img/footer-youtube.png" alt="icon-youtube">
+                                <img src="{{ Vite::asset('resources/img/footer-youtube.png') }}" alt="icon-facebook">
                             </a>
                         </li>
                         <li>
                             <a href="#nogo">
-                                <img src="../assets/img/footer-pinterest.png" alt="icon-pinterest">
+                                <img src="{{ Vite::asset('resources/img/footer-pinterest.png') }}" alt="icon-facebook">
                             </a>
                         </li>
                         <li>
                             <a href="#nogo">
-                                <img src="../assets/img/footer-periscope.png" alt="icon-periscope">
+                                <img src="{{ Vite::asset('resources/img/footer-periscope.png') }}" alt="icon-facebook">
                             </a>
                         </li>
                     </ul>

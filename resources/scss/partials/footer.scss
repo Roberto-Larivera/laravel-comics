@@ -1,0 +1,81 @@
+footer {
+    .footer_top {
+    background-color: #0282F9;
+    height: 150px;
+    width: 100%;
+
+    
+}
+    .footer_center {
+        width: 100%;
+        background-image:url(../assets/img/footer-bg.jpg);
+        background-repeat:no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        // UTILIZZO SFONDO DOPPIO
+        /*
+        // &.multi-bg{
+        //     background-image: url('../assets/img/dc-logo-bg.png'),url('../assets/img/footer-bg.jpg');
+        //     background-repeat: no-repeat, no-repeat;
+        //     background-size: none, cover;
+        //     background-position: right, center;
+        // }
+        */
+        .container {
+            background-image: url(../assets/img/dc-logo-bg.png);
+            background-repeat: no-repeat;
+            // background-size: cover;
+            background-position: right;
+
+        }
+
+        
+    }
+
+    .footer_bottom {
+        height: $height_foot-bottom;
+        width: 100%;
+        background-color: #303030;
+
+        .bottom_content {
+            height: 100%;
+            width: 100%;
+            @include displayFlex ();
+
+            .bottom_content-start {
+                button{
+                    @include button ($color_primary,$bttn_light-primary,$color_primary,$color_primary)
+                }
+            }
+
+            .bottom_content-end {
+                ul {
+                    @include displayFlex (space-around);
+                    height: 100%;
+                    width: 100%;
+
+                    li {
+                        list-style-type: none;
+                        padding: 10px;
+                        height: 100%;
+                        @include displayFlex (flex-start);
+
+
+                        span {
+                            text-transform: uppercase;
+                            color: $color_primary;
+                            font-weight: 900;
+
+                        }
+
+                        a {
+                            text-decoration: none;
+                            color: $txt_light-primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
