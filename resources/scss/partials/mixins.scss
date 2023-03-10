@@ -20,3 +20,20 @@
     justify-content: $justi;
     align-items: $items;
 }
+
+@mixin listHeader (){
+    &{
+        li{
+            &.active a,
+                    &:hover a {
+                        color: $color_primary;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        font-weight: bold;
+                        color: $txt_link;
+                    }
+        }
+    }
+}

@@ -1,13 +1,37 @@
 <header>
+    <div class="header_bar">
+        <div class="container">
+            <div class="row p-1">
+                <div class="col text-end">
+                    <span>
+                        dc power<span>sm</span> visa &#174;
+                    </span>
+                </div>
+                <div class="col-auto">
+                    <div class="dropdown">
+                        <a class="dropdown-toggle" href="#nogo" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            additional dc sites
+                        </a>
+                      
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="row header_container">
 
-            <div class="col h-100">
+            <div class="col">
                 <div class="header_logo">
                     <img src="{{ Vite::asset('resources/img/dc-logo.png') }}">
                 </div>
             </div>
-            <div class="col h-100">
+            <div class="col align-items-center">
                 <div class="header_links ">
                     <ul class="d-flex">
                         {{-- qui i link  --}}
@@ -46,7 +70,7 @@
 
                 </div>
             </div>
-            <div class="col h-100 d-flex align-items-center">
+            <div class="col align-items-center d-flex align-items-center">
                 <div class="input-group">
                     <div class="form-floating">
                         <input type="search" class="form-control" id="###" placeholder="#">
