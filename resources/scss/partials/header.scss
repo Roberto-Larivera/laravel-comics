@@ -63,6 +63,10 @@ header {
                 border-bottom: 3px solid $color_primary;
                 border-radius: 0;
                 text-align: end;
+
+                &:focus {
+                    box-shadow: none;
+                }
             }
         }
 

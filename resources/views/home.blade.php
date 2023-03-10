@@ -13,13 +13,16 @@
                     <div class="title-section">
                         <h2>current series</h2>
                     </div>
-                    <div class="series_cards">
-                        <div class="card">
-                            <div class="card_image">
-                                {{-- <img :src="src" :alt="title"> --}}
+                    <div class="series_boxs">
+                        @foreach($comics as $comic)
+                        <div class="box">
+                            <div class="box_image">
+                                {{-- <img src="{{ $comic['thumb'] }}" > --}}
+                                <img src="https://picsum.photos/200/300" >
                             </div>
-                            <h3>hello</h3>
+                            <h3>{{ $comic['series'] }}</h3>
                         </div>
+                        @endforeach
                     </div>
                     <button>load more</button>
                 </div>

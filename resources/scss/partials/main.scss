@@ -35,7 +35,7 @@ main {
             }
         }
 
-        .series_cards {
+        .series_boxs {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-evenly;
@@ -43,13 +43,13 @@ main {
             margin-bottom: 20px;
 
 
-            .card {
+            .box {
                 width: calc((100% / 6));
                 padding: 5px;
                 margin-bottom: 20px;
                 cursor: pointer;
 
-                .card_image {
+                .box_image {
                     width: 100%;
 
                     img {
@@ -65,7 +65,7 @@ main {
                     color: $txt_light-primary;
                     font-weight: 700;
                     margin-top: 15px;
-                    text-transform: capitalize;
+                    text-transform: uppercase;
                 }
             }
         }

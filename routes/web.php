@@ -22,5 +22,9 @@ Route::get('/template', function () {
 });
 
 Route::get('/', function () {
-    return view('home');
-});
+    return view('home',
+    [
+        'comics'=> config('comics')
+    ]
+);
+})->name('home');
