@@ -28,7 +28,8 @@ header {
                 font-size: .9rem;
 
             }
-            .dropdown-menu{
+
+            .dropdown-menu {
                 @include listHeader;
             }
         }
@@ -65,7 +66,7 @@ header {
                     //text-transform: uppercase;
                     @include displayFlex (flex-start);
 
-                    
+
                     &.active,
                     &:hover {
                         box-shadow: inset 0px -6px 0px 0px $color_primary;
@@ -81,7 +82,7 @@ header {
                     //     font-weight: bold;
                     //     color: $txt_link;
                     // }
-                    
+
                 }
             }
         }
@@ -99,6 +100,12 @@ header {
                     box-shadow: none;
                 }
             }
+
+            label {
+                font-weight: 900;
+                color: $txt_link;
+                text-transform: capitalize;
+            }
         }
 
         span.input-group-text {
@@ -107,6 +114,7 @@ header {
             border: 0;
             border-bottom: 3px solid $color_primary;
             border-radius: 0;
+
         }
     }
 }

@@ -35,36 +35,12 @@
                 <div class="header_links ">
                     <ul class="d-flex">
                         {{-- qui i link  --}}
+                        @foreach ($linkHeader as $item)
+                            
                         <li>
-                            <a href="#nogo">characters</a>
+                            <a href="{{ $item['url'] }}">{{ $item['title'] }}</a>
                         </li>
-                        <li>
-                            <a href="#nogo">comics</a>
-                        </li>
-                        <li>
-                            <a href="#nogo">movies</a>
-                        </li>
-                        <li>
-                            <a href="#nogo">tv</a>
-                        </li>
-                        <li>
-                            <a href="#nogo">games</a>
-                        </li>
-                        <li>
-                            <a href="#nogo">collectibles</a>
-                        </li>
-                        <li>
-                            <a href="#nogo">videos</a>
-                        </li>
-                        <li>
-                            <a href="#nogo">fans</a>
-                        </li>
-                        <li>
-                            <a href="#nogo">news</a>
-                        </li>
-                        <li>
-                            <a href="#nogo">shop</a>
-                        </li>
+                        @endforeach
                     </ul>
 
 
