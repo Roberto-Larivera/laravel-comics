@@ -74,7 +74,7 @@ footer {
 
             .center_content {
                 height: 100%;
-                width: 100%;
+                // width: 100%;
 
                 .center_content-links {
                     padding-top: 20px;
@@ -116,6 +116,14 @@ footer {
                                     }
                                 }
                             }
+                        }
+                    }
+                }
+                .center_content-terms{
+                    p{
+                        color: $txt_link;
+                        a{
+                            text-decoration: none;
                         }
                     }
                 }
