@@ -1,16 +1,52 @@
 @extends('layout.app')
 
-@section('head_title') {{ $comics['series'] }} @endsection {{-- segnaposto dentro head  --}}
+@section('head_title')
+    {{ $comics['series'] }}
+@endsection {{-- segnaposto dentro head  --}}
 
-@section('body_main') {{-- segnaposto dentro body  --}}
+@section('body_main')
+    {{-- segnaposto dentro body  --}}
     <main>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h3 class="text-break">{{ $comics['series'] }}</h3>
-                </div>
-                <div class="col">
-                    <img src="{{ $comics['thumb'] }}" >
+        <div class="main_jumbotron">
+        </div>
+        <div class="main_current__series">
+            <div>
+                <div class="container">
+                    <div class="title-section">
+                        <h2>current series</h2>
+                    </div>
+                    <div class="row row-cols-2 comic_series">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-body text-light">
+                                    <h5 class="card-title">{{ $comics['series'] }}</h5>
+                                    <h6 class="card-subtitle  mb-3 text-muted">{{ $comics['title'] }}</h6>
+
+                                    <div>
+                                        <span>
+                                            {{ $comics['sale_date'] }}
+                                        </span>
+                                        <span class="badge bg-success">
+                                            {{ $comics['type'] }}
+                                        </span>
+                                    </div>
+
+                                    <span class="fwbold">Description<br> </span>
+                                    <p class="card-text">{{ $comics['description'] }}</p>
+
+
+                                    <p class="card-text">
+                                        <span class="fwbold">Writers<br> </span> {{ implode(', ', $comics['writers']) }}
+                                    </p>
+                                    <a class="btn btn-success disabled" href="#" role="button" aria-disabled="true">Acquista</a>
+                                    <a class="btn btn-outline-info" href="{{ route('home') }}" role="button">Indietro</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src="{{ $comics['thumb'] }}">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

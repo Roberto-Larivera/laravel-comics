@@ -53,10 +53,7 @@ main {
                     width: 100%;
 
                     img {
-                        width: 100%;
-                        object-fit: cover;
-                        object-position: center;
-                        aspect-ratio: 1;
+                        @include imgCard
 
                     }
                 }
@@ -75,4 +72,20 @@ main {
         }
     }
 
+}
+
+.comic_series{
+    .card{
+        background-color: $bg_main-current--series;
+        border: 2px solid $color_primary;
+    }
+    img{
+        @include imgCard
+    }
+    .badege{
+        background-color: $color_primary;
+    }
+    .fwbold{
+        font-weight: 900;
+    }
 }
