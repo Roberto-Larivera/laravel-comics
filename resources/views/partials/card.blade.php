@@ -1,5 +1,5 @@
 @foreach($comics as $comic)
-<div class="col">
+<div class="col mb-5 mb-md-0">
     
     <a href="{{ route('comic',$loop->index) }}" class="text-decoration-none">
         <div class="box w-100">

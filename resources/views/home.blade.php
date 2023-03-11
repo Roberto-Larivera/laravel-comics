@@ -13,7 +13,7 @@
                     <div class="title-section">
                         <h2>current series</h2>
                     </div>
-                    <div class="series_boxs row row-cols-6 gx-4 gy-4">
+                    <div class="series_boxs row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-6 gx-4 gy-5">
                         {{-- Include di Card --}}
                        @include('partials.card')
                     </div>
