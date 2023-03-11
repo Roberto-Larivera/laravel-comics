@@ -15,8 +15,8 @@
                     <div class="title-section">
                         <h2>current series</h2>
                     </div>
-                    <div class="row row-cols-2 comic_series">
-                        <div class="col">
+                    <div class="row row-cols-1 row-cols-md-2 comic_series">
+                        <div class="col order-2 order-md-1">
                             <div class="card h-100">
                                 <div class="card-body text-light">
                                     <h5 class="card-title">{{ $comics['series'] }}</h5>
@@ -43,8 +43,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <img src="{{ $comics['thumb'] }}">
+                        <div class="col order-1 order-md-2 mb-5 mb-md-0">
+                            <img src="{{ $comics['thumb'] }}" class="rounded">
                         </div>
                     </div>
                 </div>
