@@ -22,52 +22,24 @@ Route::get('/template', function () {
 });
 
 Route::get('/', function () {
-    $linkHeader = [
+    return view(
+        'home',
         [
-            'title'=> 'characters',
-            'url'=> '#nogo'
-        ],
-        [
-            'title'=> 'comics',
-            'url'=> '#nogo'
-        ],
-        [
-            'title'=> 'movies',
-            'url'=> '#nogo'
-        ],
-        [
-            'title'=> 'tv',
-            'url'=> '#nogo'
-        ],
-        [
-            'title'=> 'games',
-            'url'=> '#nogo'
-        ],
-        [
-            'title'=> 'collectibles',
-            'url'=> '#nogo'
-        ],
-        [
-            'title'=> 'videos',
-            'url'=> '#nogo'
-        ],
-        [
-            'title'=> 'fans',
-            'url'=> '#nogo'
-        ],
-        [
-            'title'=> 'news',
-            'url'=> '#nogo'
-        ],
-        [
-            'title'=> 'shop',
-            'url'=> '#nogo'
-        ],
-    ];
-    return view('home',
-    [
-        'comics'=> config('comics'),
-        'linkHeader' => $linkHeader
-    ]
-);
+            'comics' => config('comics'),
+            'linkHeader' => config('headerLink')
+        ]
+    );
 })->name('home');
+
+Route::get('/comic/{index}', function ($index) {
+    $comics = config('comics');
+    $comic = $comics[$index];
+    //dd($comic);
+    return view(
+        'comic',
+        [
+            'comics' => $comic,
+            'linkHeader' => config('headerLink')
+        ]
+    );
+})->name('comic');
