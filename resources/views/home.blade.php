@@ -17,7 +17,7 @@
                         {{-- Include di Card --}}
                        @include('partials.card')
                     </div>
-                    <button>load more</button>
+                    <button class="mt-5">load more</button>
                 </div>
             </div>
         </div>

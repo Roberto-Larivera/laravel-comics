@@ -22,8 +22,8 @@
                                     <h5 class="card-title">{{ $comics['series'] }}</h5>
                                     <h6 class="card-subtitle  mb-3 text-muted">{{ $comics['title'] }}</h6>
 
-                                    <div>
-                                        <span>
+                                    <div class="mb-3">
+                                        <span class="me-3">
                                             {{ $comics['sale_date'] }}
                                         </span>
                                         <span class="badge bg-success">

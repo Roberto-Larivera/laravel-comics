@@ -26,7 +26,8 @@ Route::get('/', function () {
         'home',
         [
             'comics' => config('comics'),
-            'linkHeader' => config('headerLink')
+            'linkHeader' => config('headerLink'),
+            'linkFooter' => config('footerLink')
         ]
     );
 })->name('home');
@@ -39,7 +40,9 @@ Route::get('/comic/{index}', function ($index) {
         'comic',
         [
             'comics' => $comic,
-            'linkHeader' => config('headerLink')
+            'linkHeader' => config('headerLink'),
+            'linkFooter' => config('footerLink')
+
         ]
     );
 })->name('comic');

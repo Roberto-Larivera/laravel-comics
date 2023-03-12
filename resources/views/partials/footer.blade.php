@@ -1,39 +1,28 @@
 <footer>
     <div class="footer_top">
-        <div class="container h-100">
-            <div class="content_links">
-                <ul>
-                    <li>
-                        <a href="#nogo">
-                            <img src="{{ Vite::asset('resources/img/buy-comics-digital-comics.png') }}" alt=""> <!--target="_blank"-->
-                            <span>digital comics</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#nogo">
-                            <img src="{{ Vite::asset('resources/img/buy-comics-merchandise.png') }}" alt="">
-                            <span>dc merchandise</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#nogo">
-                            <img src="{{ Vite::asset('resources/img/buy-comics-subscriptions.png') }}" alt="">
-                            <span>subscription</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#nogo">
-                            <img src="{{ Vite::asset('resources/img/buy-comics-shop-locator.png') }}" alt="">
-                            <span>comic shop locator</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#nogo">
-                            <img src="{{ Vite::asset('resources/img/buy-dc-power-visa.svg') }}" alt="">
-                            <span>dc power visa</span>
-                        </a>
-                    </li>
-                </ul>
+        <div class="container">
+            <div class="row h-100">
+                <div class="col h-100 ">
+                    <div class="content_links">
+                        <ul class="row">
+                            @foreach ($linkFooter as $item)
+                                
+                            <li class="col py-5 d-flex justify-content-center">
+                                <a href="#nogo" class="d-flex h-100 align-items-center">
+                                    <div>
+                                        <img src="{{ Vite::asset($item['src']) }}" alt=""> <!--target="_blank"-->
+                                        
+                                    </div>
+                                    <div>
+                                        <span>{{ $item['title'] }}</span>
+
+                                    </div>
+                                </a>
+                            </li>
+                            @endforeach
+                        </ul>
+                    </div>
+                </div>
             </div>
             
         </div>
@@ -43,7 +32,7 @@
             <div class="row center_content">
                 <div class="col">
                     <div class="row">
-                        <div class="col-6 center_content-links">
+                        <div class="col col-md-6 center_content-links">
                             <div class="content_links-left">
                                 <h3>
                                     dc comics
@@ -200,7 +189,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-6 center_content-terms">
+                        <div class="col col-md-6 center_content-terms">
                             <p>
                                 All Site Content TM and & 2020 DC Entertainment, unless otherwise <a href="#nogo">noted here</a>. All rights reserved.
                                 <a href="#nogo">Cookies Settings</a>
